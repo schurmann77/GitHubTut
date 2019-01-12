@@ -1,0 +1,54 @@
+<!DOCTYPE>
+	<html lang="en">
+	<head>
+		<title>Home Page</title>
+	</head>
+	<body>
+	<header>
+		<h1 align="center">Bella Notte</h1>
+	</header>
+	<nav>
+		<hr />
+		<p><a href="index.html">Home</a>		<a href="menu.html">Menu</a>		<a href="contact.html">Contact Us</a>
+		<hr />
+	</nav>
+	<div id="contact" align="center">
+		
+		<form action="contact.html" method="POST">
+		<p>Name: <input type="text" name="name" /></p>
+		<p>Email: <input type="text" name="email" /></p>
+		<p>Phone: <input type="text" name="phone" /></p>
+		<p>Reason for Inquiry
+		<select id="inquiry" name="inquiry">
+			<option>Catering</option>
+			<option>Wedding</option>
+			<option>Business</option>
+		</select></p>
+			<table>
+				<tr>
+					<td>Additional Information: </td>
+					<td></td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td rowspan="2"><textarea id="textarea" rows="10" cols="32"></textarea></td>
+				</tr>
+			</table>
+			<p>Have you been to the restaurant? <input type="radio" name="visited" value="No" checked />No <input type="radio" name="visited" value="Yes" />Yes</p>
+			<p>Best days to contact you: 
+				<input type="checkbox" name="contact" value="M" />M
+				<input type="checkbox" name="contact" value="T" />T
+				<input type="checkbox" name="contact" value="W" />W
+				<input type="checkbox" name="contact" value="Th" />Th
+				<input type="checkbox" name="contact" value="F" />F
+			</p>
+			<input type="submit" name="submit" value="Send Request"/>
+		
+	</div>
+	<footer>
+	<hr />
+	<p align="center">1125 Lovers Way, Oxford, MS 38655</p>
+	<p align="center">(235) 526-6883</p>
+	</footer>
+	</body>
+</html>
