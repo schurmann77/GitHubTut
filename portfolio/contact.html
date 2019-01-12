@@ -1,11 +1,14 @@
 <!DOCTYPE>
 <html lang="en">
-<head>
-<title>Contact me</title>
-</head>
-<body>
-<header>
-<hr />
+	<head>
+		<title>Contact me</title>
+	</head>
+	<body>
+		<header>
+		<h1>Contact Me</h1>
+		
+		</header>
+
 		<!-- We need to add links to projects.html, contact.html, and testimonials.html -->
 		<nav>
 			<hr />
@@ -18,17 +21,53 @@
 			</p>
 			<hr />
 		</nav>
-		<hr />		
-</header>
-<div>
-<h2>Contact Me</h2>
-<a href="index.html">
-			<img src="images/graduation1.jpg" alt="A picture of me at graduation" style="width: 350px;" />
-			</a>
-<p>
-Here we see a <span style="background-color: yellow">span styling. I'm an </span><span style="color: red"> <em>idiot</em></span>
-because I was using class and not style in my span elements. <strong>So glad I figured that one out.</strong> Leave me alone, it's early. xD
+				
 
-</div>
+<h2>Information Request</h2>
+	<form action="submit.html" method="POST">
+	<label for="firstName">First Name:</label> <br /><span id="asterisk" style="color: red"> * </span>
+	<input type="text" id="firstName" name="firstName" required><br /><br />
+		
+	<label for="lastName">Last Name:</label> <br /><span id="asterisk" style="color: red"> * </span>
+	<input type="text" id="lastName" name="lastName" required><br /><br />
+		
+	<label for="phoneNumber">Phone Number:</label> <br /><span id="asterisk" style="color: red"> * </span>
+	<input type="text" id="phoneNumber" name="phoneNumber" required><br /><br />
+	
+	<label for="contact">Best time to call:</label><br />
+	<select id="contact" name="contact">
+		<option value="default" selected>--Select One--</option>
+		<option value="morning">Morning (8 AM to 12 PM Central)</option>
+		<option value="afternoon">Afternoon(12 PM to 5 PM Central)</option>
+		<option value="evening">Evening (5 PM to 8 PM Central)</option>
+	</select><br />
+	<br />
+	<fieldset>
+	<legend>I am interested in (check all that apply)</legend><br />
+		<input type="checkbox" id="frontEnd" name="interest" value="frontEnd">
+			<label for="frontEnd">Front End Web Development</label><br />
+		<input type="checkbox" id="backEnd" name="interest" value="backEnd">
+			<label for="backEnd">Back End Web Development</label><br />
+		<input type="checkbox" id="applications" name="interest" value="applications">
+			<label for="applications">Software Development</label><br />
+	</fieldset>
+	<br />
+	<fieldset>
+	<legend>I have filled out the questionnaire form:</legend><br />
+		<input type="radio" id="choice1" name="questionnaire" value="yes">
+			<label for="choice1">Yes</label><br />
+		<input type="radio" id="choice2" name="questionnaire" value="no" checked>
+			<label for="choice2">No</label><br />
+	</fieldset>
+	<br />
+	<label for="info">Additional Information</label><br />
+		<textarea id="info" name="info"></textarea>
+		<br />
+	<input type="submit" name="submit" value="Submit">
+	<hr />
+
+<footer>
+
+</footer>
 </body>
 </html>

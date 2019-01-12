@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html lang="en">
+	<head>
+		<title>Working with Forms</title>
+	</head>
+	<body>
+		<h1>Form Example</h1>
+		<form action="table.html" method="POST">
+			Text Input:<span id="asterisk" style="color: red"> * </span><input type="text" name = "myInputName" required /><br />
+			<br />
+			
+			Radio Buttons:<br />
+			<br />
+			<input type="radio" name="answer" value="YES" checked />Yes<br />
+			<input type="radio" name="answer" value="NO" />No <br />
+			<input type="radio" name="answer" value="MAYBE" />Maybe <br />
+			<br />
+			Password Input:<span id="asterisk" style="color: red"> * </span><input type="password" name="myPassword" required /><br />
+			<br />
+			<input type="checkbox" name="myChoices" value="Salad" checked />Salad <br />
+			<input type="checkbox" name="myChoices" value="Soup" checked />Soup <br />
+			<input type="checkbox" name="myChoices" value="Crackers" checked />Crackers <br />
+			<input type="checkbox" name="myChoices" value="Cheese" checked />Cheese <br />
+			<br />
+			<select name="Operating System">
+				<option value="iPhone X">Mac OS</option>
+				<option value="Galaxy S9+">Android</option>
+				<option value="Windows Note">Windows</option>
+			</select>
+			<br />
+			<br />
+			<textarea name="Description"></textarea><br /><br />
+			<input type="submit" /><input type="reset" value="I Messed Up"/><br />
+		</form>
+	</body>
+</html>
