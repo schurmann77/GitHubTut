@@ -36,7 +36,7 @@ select, textarea {
 }
 
 input[type=submit] {
-	font-size: 1.2em
+	font-size: 1.2em;
 	background-color: #fef9ff;
 	padding: 4px 8px;
 }
@@ -65,15 +65,35 @@ nav {
 }
 
 nav a {			
-	text-align: justified;
-	margin-left: 5%;
-	margin-right: 5%;
+	background-color: #9785b5;
+	color: fef9ff;
+	padding: 8px;
+	border: 2px solid #fef9ff;
+	text-decoration: none;	
+	text-align: center;
+	display: block;
+	width: 100px;
+}
+
+nav a:visited {
+	color:#e4c3ad;
+}
+
+nav a:hover {
+	background-color: #fef9ff;
+	color: #5b7d87;
+}
+
+nav a:active {
+	font-weight: bold;
 }
 
 body {
     background-color: #fef9ff;
 	font-family: arial, helvetica, sans-serif;
 	color: #0d1f2d;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 header, footer {
@@ -90,4 +110,22 @@ footer p {
 
 h1 {
 	font-size: 2.5em;
+	text-shadow: 2px 1px #444;
+}
+
+nav a {			
+	background-color: #9785b5;
+	color: fef9ff;
+	padding: 8px;
+	border: 2px solid #fef9ff;
+	text-decoration: none;	
+	text-align: center;
+}
+
+.right-content {
+	float:left;
+}
+
+.clear-float {
+	clear:both;
 }

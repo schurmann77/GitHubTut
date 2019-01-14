@@ -42,12 +42,6 @@
 			tr {
 				height: 30px;
 			}
-			nav a {
-				
-				text-align: justified;
-				margin-left: 5%;
-				margin-right: 5%;
-			}
 			
 		</style>
 		
@@ -61,22 +55,35 @@
 		
 		<!-- We need to add links to projects.html, contact.html, and testimonials.html -->
 		<nav>
-			
 			<p>
-			<a href="index.html">Home</a>
-			<a href="projects.html">Projects</a>
-			<a href="contact.html">Contact Me</a>
-			<a href="testimonials.html">Testimonials</a>			
-			<a href="https://www.google.com" target="_blank">Google Search</a>
-			</p>
+			<div class="right-content">
+				<a href="index.html">Home</a></div>
 			
+			
+			<div class="right-content">
+				<a href="projects.html">Projects</a></div>
+			
+			
+			<div class="right-content">
+				<a href="contact.html">Contact Me</a></div>
+			
+			
+			<div class="right-content">
+				<a href="testimonials.html">Testimonials</a></div>
+				
+			<div class="right-content">
+				<a href="https://www.google.com" target="_blank">Google</a></div>
+			<div class="clear-float"></div>
+			</p>	
 		</nav>
+		
+		<div class="clear-float"></div>
 			
 		<section>
 			<article id="about-me">
 			<h2><em>About Me</em></h2>
 			<a href="index.html">
-			<img src="images/graduation1.jpg" alt="A picture of me at graduation" style="width: 350px;" />
+				<img src="images/graduation1.jpg" alt="A picture of me at graduation" width="350px;" style="float:left;" />
 			</a>
 			<p>My name is Chris, and I've recently graduated from the University of Mississippi with a Bachelor's of Applied Science, 
 				Paralegal Studies. I have always held an interest in coding, but I didn't want my degree to be in Computer Science. I felt that I could 
@@ -84,11 +91,14 @@
 			<p>I found a job right out of college, and they were actually a mix of Software Development and information systems, within the
 				Real Estate realm. That job fostered my curiosity about coding even further. <strong>I taught myself the fundamentals of C#, and 
 				then went on to learn HTML5, CSS3, and JavaScript.</strong></p>
+				<div class="clear-float"></div>
 			</article>
-		
+				
+				
 			<article id="experience">
 			<h2><em>Past Experiences</em></h2>
-			<img src="images/kenji1.jpg" alt="A picture of my 2 year old." style="width: 350px;" />
+				<img src="images/kenji1.jpg" alt="A picture of my 2 year old." style="width: 350px;" />
+			<div class="right-content">
 			<table id="table">
 				<caption>Employment History</caption>
 				<thead>
@@ -117,11 +127,14 @@
 				</tbody>
 
 			</table>
+			</div>
+			<div class="clear-float"></div>
 			</article>
 		
 			<article id="hobbies">
 			<h2><em>Hobbies</em></h2>
-			<img src="images/computer1.jpg" alt="A picture of the first PC I ever built." style="width: 350px;" />
+				<img src="images/computer1.jpg" alt="A picture of the first PC I ever built." style="width: 350px;" />
+				<div class="right-content">
 			<ul>
 				<li>Authors</li>
 					<ol>
@@ -149,6 +162,8 @@
 						<li>The Legend of Zelda: Breath of The Wild</li>
 					</ol>
 				</ul>
+				</div>
+				<div class="right-content">
 				<ul>
 					<li>Indoor Activites</li>
 						<ul>
@@ -169,6 +184,8 @@
 							<li>Baseball</li>
 						</ul>
 				</ul>
+				</div>
+				<div class="clear-float"></div>
 			</article>
 		</section>
 		
