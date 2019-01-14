@@ -7,27 +7,71 @@
 <html lang="en">
 	<head>	
 		<title>Chris Schurmann's Portfolio</title>	
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		<style>
+		
+			#table {
+				width: 90%;	
+				margin: auto;
+			}
+			
+			table caption {
+				font-weight: bold;
+				font-size: 1.2em;
+				margin-bottom: 8px;
+			}
+			
+			table, th, td {
+				border: 2px solid #fef9ff;
+				border-collapse: collapse;
+				padding: 5px 10px;
+			}
+			
+			thead th {
+				background-color: #f3e3f9;
+			}
+			
+			tbody tr:nth-child(odd) {
+				background-color: #b9aecd
+			}
+			
+			tbody tr:nth-child(even) {
+				background-color: #a293bd
+			}
+			
+			tr {
+				height: 30px;
+			}
+			nav a {
+				
+				text-align: justified;
+				margin-left: 5%;
+				margin-right: 5%;
+			}
+			
+		</style>
+		
 	</head>
 	
-	<body>
-		
+	<body>		
 		<header>
-		<h1>Portfolio for Christopher Schurmann</h1>
+			<h1>Portfolio for Christopher Schurmann</h1>
 		</header>
 		
-		<hr />
+		
 		<!-- We need to add links to projects.html, contact.html, and testimonials.html -->
 		<nav>
-			<hr />
+			
 			<p>
+			<a href="index.html">Home</a>
 			<a href="projects.html">Projects</a>
 			<a href="contact.html">Contact Me</a>
 			<a href="testimonials.html">Testimonials</a>			
 			<a href="https://www.google.com" target="_blank">Google Search</a>
 			</p>
-			<hr />
+			
 		</nav>
-		<hr />		
+			
 		<section>
 			<article id="about-me">
 			<h2><em>About Me</em></h2>
@@ -45,28 +89,33 @@
 			<article id="experience">
 			<h2><em>Past Experiences</em></h2>
 			<img src="images/kenji1.jpg" alt="A picture of my 2 year old." style="width: 350px;" />
-			<table>
+			<table id="table">
 				<caption>Employment History</caption>
-				<tr>
-					<th>Years of Employment</th>
-					<th>Title</th>
-					<th>Company</th>
-				</tr>
-				<tr>
-					<td>2018-2019</td>
-					<td>Customer Service Representatvie</td>
-					<td>CoreLogic | FNC</td>
-				</tr>
-				<tr>
-					<td>2013-2018</td>
-					<td>CEO</td>
-					<td>MidSouth360Tours</td>
-				</tr>
-				<tr>
-					<td>2013-2018</td>
-					<td>Student</td>
-					<td>The University of Mississippi</td>
-				</tr>				
+				<thead>
+					<tr>
+						<th>Years of Employment</th>
+						<th>Title</th>
+						<th>Company</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2018-2019</td>
+						<td>Customer Service Representatvie</td>
+						<td>CoreLogic | FNC</td>
+					</tr>
+					<tr>
+						<td>2013-2018</td>
+						<td>CEO</td>
+						<td>MidSouth360Tours</td>
+					</tr>
+					<tr>
+						<td>2013-2018</td>
+						<td>Student</td>
+						<td>The University of Mississippi</td>
+					</tr>				
+				</tbody>
+
 			</table>
 			</article>
 		
@@ -124,7 +173,7 @@
 		</section>
 		
 	<footer>
-		<hr />
+		
 		<p>&copy; 2019 Christopher Schurmann.  All rights reserved.</p>
 	</footer>
 
