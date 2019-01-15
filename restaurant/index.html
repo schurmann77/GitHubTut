@@ -1,7 +1,50 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 	<html lang="en">
-	<head>
+	<head>	
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
 		<title>Home Page</title>
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+		
+		<style>
+			body {
+				background-color: #efe6ce;
+			}
+		
+			nav {
+				background-color: #9d7142;
+			}
+			
+			nav a:visited {
+				color: #dfb97c;
+			}
+		
+			nav .btn{
+				background-color: #ad7d4a;
+				color: #efe6ce;	
+				text-shadow: 1px 1px #444;
+				
+			}
+			nav .btn:hover {
+				font-weight: bold;
+				background-color: #5c3d23;
+				color: #fef9ff;
+				text-shadow: 1px 1px #444;
+			}
+			
+			header h1 {
+				font-family: 'Tangerine', sans-serif;
+				font-size: 4em;
+				padding-top: 8px;
+				text-shadow: 8px 4px 6px #444;
+			}
+			
+		</style>
 	</head>
 	<body>	
 	<header>
@@ -9,12 +52,12 @@
 	</header>
 	<nav>
 		<hr />
-		<p><a href="index.html">Home</a>		<a href="menu.html">Menu</a>		<a href="contact.html">Contact Us</a>
+		<p><a href="index.html" class="btn badge-pill">Home</a>		<a href="menu.html" class="btn badge-pill">Menu</a>		<a href="contact.html" class="btn badge-pill">Contact Us</a>
 		<hr />
 	</nav>
-	<div align="center">
-	<img src="img/wine1.jpg" alt="A picture of menus and fine wine.">
-	</div>
+	<div align="center"><img src="img/wine1.jpg" alt="A picture of menus and fine wine." align="center"></div>
+	
+	<div class="container">
 	<section>
 		<article>			
 			
@@ -31,8 +74,12 @@
 			experience money can buy.</p>
 		</article>
 	</section>
+	
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</div>
 	<footer>
-	<hr />
 	<p align="center">1125 Lovers Way, Oxford, MS 38655</p>
 	<p align="center">(235) 526-6883</p>
 	</footer>
