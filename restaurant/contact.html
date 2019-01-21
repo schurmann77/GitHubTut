@@ -6,59 +6,78 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
 		<title>Home Page</title>
-		
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 		
-		<style>
-			body {
-				background-color: #efe6ce;
-			}
+<style>
+	body {
+		background-color: #efe6ce;
+	}
 		
-			nav {
-				background-color: #9d7142;
-			}
+	nav {
+		background-color: #9d7142;
+	}
 			
-			nav a:visited {
-				color: #dfb97c;
-			}
+	nav a:visited {
+		color: #dfb97c;
+	}
 		
-			nav .btn{
-				background-color: #ad7d4a;
-				color: #efe6ce;
-				text-shadow: 1px 1px #444;
-				box-shadow: 3px 2px 4px #444;				
-			}
+	nav .btn{
+		background-color: #ad7d4a;
+		color: #efe6ce;
+		text-shadow: 1px 1px #444;
+		box-shadow: 3px 2px 4px #444;	
+		margin-left: 1%;			
+	}
 			
-			nav .btn:hover {
-				font-weight: bold;
-				background-color: #5c3d23;
-				color: #fef9ff;
-				text-shadow: 1px 1px #444;
-			}
+	nav .btn:hover {
+		background-color: #5c3d23;
+		color: #fef9ff;
+		text-shadow: 1px 1px #444;
+	}
 			
-			header h1 {
-				font-family: 'Tangerine', sans-serif;
-				font-size: 4em;
-				padding-top: 8px;
-				text-shadow: 8px 4px 6px #444;
-			}
+	header h1 {
+		font-family: 'Tangerine', sans-serif;
+		font-size: 5em;
+		padding-top: 8px;
+		text-shadow: 8px 4px 6px #444;
+	}
+
+	header p#smallerElement1 {
+		font-family: 'Tangerine', sans-serif;
+		font-size: 3.5em;
+		text-shadow: 8px 4px 6px #444;
+	}
+
+	header p#smallerElement2 {
+		font-family: 'Tangerine', sans-serif;
+		font-size: 3.5em;
+		text-shadow: 8px 4px 6px #444;
+		position: absolute;
+		right: 4%;
+	}
 			
-			form label {
-				font-weight: bold;
-			}
+	form label {
+		font-weight: bold;
+	}
 			
-		</style>
+</style>
 		
 	</head>
 	<body>
-	<header>
+	<div class="container-fluid">
+		<header class="jumbotron">
 		<h1 align="center">Bella Notte</h1>
+		<p id="smallerElement1">We're opening a new location!</p>
+		<p id="smallerElement2">2236 Cupid's Circle, Oxford MS</p>
 	</header>
 	<nav>
 		<hr />
-		<p><a href="index.html" class="btn badge-pill">Home</a>		<a href="menu.html" class="btn badge-pill">Menu</a>		<a href="contact.html" class="btn badge-pill">Contact Us</a>
+		<p><a href="index.html" class="btn badge-pill"><span style="color: #fef9ff;"><i class="fas fa-home"></a></i></span>		<a href="menu.html" class="btn badge-pill">Menu</a>		<a href="contact.html" class="btn badge-pill">Contact Us</a>
 		<hr />
 	</nav>
 	<div id="contact" align="center">
@@ -76,11 +95,11 @@
 		</select></p>
 			<table>
 				<tr>
-					<td>Additional Information: </td>
+					<td style="float: left;">Additional Information: </td>
 					<td></td>
 				</tr>
 				<tr>
-					<td> </td>
+					<td></td>
 					<td rowspan="2"><textarea id="textarea" rows="10" cols="32"></textarea></td>
 				</tr>
 			</table>
@@ -93,11 +112,12 @@
 				<input type="checkbox" name="contact" value="F" />F
 			</p>
 			<input type="submit" name="submit" value="Send Request"/>
-		
-	</div>
+		</div>
+	
 	<footer>
 	<p align="center">1125 Lovers Way, Oxford, MS 38655</p>
 	<p align="center">(235) 526-6883</p>
 	</footer>
+</div>
 	</body>
 </html>

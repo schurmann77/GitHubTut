@@ -6,3 +6,16 @@ header, footer {
 	text-shadow: 2px 1px #444;
 }
 
+.jumbotron {
+	background-image: url("img/skyline.jpg");
+	background-size: cover;
+}
+
+header h1 {
+	color: #fff;
+	margin-bottom: 3%;
+}
+header p {
+	color: #fff;
+	position: absolute;
+}
