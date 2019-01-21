@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <h1 class="jumbotron">Click to Add Items</h1>
+    <form name="luckySevens" onsubmit="return validateItems();" 
+          onreset="resetForm();" class="form-inline">
+            <div class="form-group">
+                <label for="bet">Starting Bet:</label>
+                <input type="number" class="form-control" id="bet">
+            </div>           
+            <button type="submit" id="submitButton" class="btn btn-default">Play</button>
+            <button type="reset" id="resetButton" class="btn">Reset</button>
+    </form>
+    <table id="results" class="table table-striped" style="display: none;">
+        <thead>
+            <tr>
+                <th>Starting Bet</th>
+                <th><span id="startingBet"></span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Total Rolls Before Going Broke</td>
+                <td><span id="broke"></span></td>
+            </tr>
+            <tr>
+                <td>Highest Amount Won</td>
+                <td><span id="maxCash"></span></td>
+            </tr>
+            <tr>
+                <td>Roll Count at Highest Amount Won:</td>
+                <td><span id="maxCashRollCount"></span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" 
+integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" 
+integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script type="text/JavaScript" src="LuckySevens1.js"></script>
+
+</body>
+</html>

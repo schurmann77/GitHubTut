@@ -7,8 +7,8 @@
 		
 		<title>Bootstrap Examples</title>
 		
-		<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/download/-->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		
 		<style>
 		nav {
@@ -59,8 +59,44 @@
 				
 			</div>
 		</div>
-	
-	
+
+		<div class="accordion" id="accordionExample">
+			<div class="card">
+				<div class="card-header" id="restaurant">
+					<h5 class="mb-0">
+						<button class="btn btn-link" type="button" data-toggle="collapse" 
+							data-target="#collapseOne" aria-extended="false" aria-controls="collapseOne">
+							My Test Restaurant Site
+						</button>
+					</h5>
+				</div> 					<!-- closes the card header class div-->
+
+				<div id="collapseOne" class="collapse" aria-labelledby="restaurant" data-parent="#accordionExample">
+					<div class="card-body">
+						<p><a href="/Repos/GitHubTut/restaurant/index.html" target="_blank">Bella Notte</a></p>
+						<figure><img src="images/website-1778529.png" alt="Screenshot of HomePage" /></figure>
+					</div> 				<!-- closes the card body class div-->
+				</div> 					<!-- closes collapse class div-->
+			</div> 						<!-- closes the card class div-->
+
+			<div class="card">
+					<div class="card-header" id="portfolio">
+						<h5 class="mb-0">
+							<button class="btn btn-link" type="button" data-toggle="collapse" 
+								data-target="#collapseTwo" aria-extended="false" aria-controls="collapseTwo">
+								My Portfolio
+							</button>
+						</h5>
+					</div> 					<!-- closes the card header class div-->
+
+			<div id="collapseTwo" class="collapse" aria-labelledby="portfolio" data-parent="#accordionExample">
+				<div class="card-body">
+					<p><a href="/Repos/GitHubTut/portfolio/index.html" target="_blank">Portfolio</a></p>
+					<figure><img src="images/website-1778529.png" alt="SS of webpage" /></figure>
+				</div>						<!-- closes card body-->
+			</div> 							<!-- closes the collapse-->
+		</div> 								<!-- closes the card itself-->
+	</div>									<!-- closes the accordion-->
 		
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

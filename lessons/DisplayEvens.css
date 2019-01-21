@@ -1,0 +1,21 @@
+.jumbotron {
+    background-color: darkslateblue;
+    color:floralwhite; 
+    border-radius: 10px; 
+    box-shadow: 2px 1px 4px #444;
+    text-shadow: 2px 1px 4px #444;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2%
+}
+
+.btn-lg {
+    background-color: lightslategray;
+    color: floralwhite;
+    text-shadow: 2px 1px 4px #444;
+    box-shadow: 2px 1px 4px #444;
+}
+
+.btn-lg:hover {
+    background-color: darkslategray;
+}
